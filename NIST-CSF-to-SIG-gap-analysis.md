@@ -1,6 +1,6 @@
 # SIG Core/Lite Gap Analysis vs NIST CSF 2.0
 ## Third-Party Risk Management Coverage Assessment
-
+## By Mehmet Yilmaz (cablepull), all rights reserved
 ---
 
 ## Executive Summary
