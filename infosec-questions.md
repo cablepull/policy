@@ -1,16 +1,12 @@
-# Focused on Information Security Risk Only
-### Excludes: Business Continuity/DR, Financial Risk, Contractual Terms, AI Specific Security
-
-# Refined Question List with NIST CSF Mapping & SIG Coverage
-
-#  Table of Contents
+# Table of Contents
 
 > **Third-Party Risk Assessment - Information Security Questions**
-> **Total:** 170 Questions across 7 Security Domains | 8 Decision Flow Diagrams
+> **Total:** 168 Questions across 7 Security Domains | 8 Decision Flow Diagrams
+> **SIG Coverage:** 68 questions in Core, 9 in Lite | 15 questions require supplemental collection
 
 ---
 
-##  List of Figures
+## List of Figures
 
 - [Figure 1: Data Classification & Handling Flow](#section-1)
 - [Figure 2: Data Security Controls Flow](#section-1)
@@ -23,110 +19,242 @@
 
 ---
 
-##  Questions by Section
+## Questions by Section
 
-###  Section 1: Data Handling & Classification
-**23 questions** (1 primary, 6 follow-up, 16 conditional)
+**Legend:** ✅ = SIG Core/Lite covers | ⚠️ = Partial coverage | **Required** = Not in SIG (must collect separately)
 
-** Primary Questions:**
-- Q1.1: Data Processing
+### Section 1: Data Handling & Classification
+**23 questions** | ✅ Core: 10 | ✅ Lite: 5 | ⚠️ Partial: 12 | **Required: 13**
 
-** Follow-up Questions:** 6 questions
+**Primary Questions:**
+- ✅ Q1.1: Data Processing
 
-** Conditional Questions:** 16 questions
+**Required Questions (Not in SIG):** 13 questions must be collected separately
+<details>
+<summary>View required questions</summary>
 
+- **Q1.4**: Data Volume
+- **Q1.9**: Data Loss Prevention
+- **Q1.12**: Breach Impact Assessment
+- **Q1.13**: Data Deletion Requirements
+- **Q1.14**: Data Sovereignty Security Risk
+- **Q1.15**: Data Residency Verification
+- **Q1.16**: Encryption Upgrade Path
+- **Q1.17**: Encryption Gap Mitigation
+- **Q1.18**: Key Management Practices
+- **Q1.19**: DLP Compensating Controls
+- **Q1.21**: Breach Response Evaluation
+- **Q1.22**: Security Transparency Concern
+- **Q1.23**: Residency Verification Gap
 
-###  Section 2: Identity & Access Management
-**34 questions** (5 primary, 16 follow-up, 13 conditional)
-
-** Primary Questions:**
-- Q2.1: Authentication Methods
-- Q2.16: Access Control Model
-- Q2.20: Privileged Access Management
-
-** Follow-up Questions:** 16 questions
-
-** Conditional Questions:** 13 questions
-
-
-###  Section 3: Network Security & Architecture
-**28 questions** (3 primary, 5 follow-up, 20 conditional)
-
-** Primary Questions:**
-- Q3.1: Deployment Model
-- Q3.20: Data Transmission to External Parties
-- Q3.26: Network Traffic Monitoring
-
-** Follow-up Questions:** 5 questions
-
-** Conditional Questions:** 20 questions
+</details>
 
 
-###  Section 4: Application Security
-**31 questions** (7 primary, 13 follow-up, 11 conditional)
+### Section 2: Identity & Access Management
+**33 questions** | ✅ Core: 14 | ✅ Lite: 1 | ⚠️ Partial: 17 | **Required: 15**
 
-** Primary Questions:**
-- Q4.1: Security Testing
-- Q4.11: Vulnerability Management
-- Q4.15: Security Vulnerability Notifications
+**Primary Questions:**
+- ✅ Q2.1: Authentication Methods
+- ✅ Core Q2.16: Access Control Model
+- ✅ Core Q2.20: Privileged Access Management
+- ✅ Core Q2.25: User Provisioning/Deprovisioning
+- ✅ Core Q2.31: Session Management
 
-** Follow-up Questions:** 13 questions
+**Required Questions (Not in SIG):** 15 questions must be collected separately
+<details>
+<summary>View required questions</summary>
 
-** Conditional Questions:** 11 questions
+- **Q2.4**: MFA Gap Assessment
+- **Q2.5**: API Key Security
+- **Q2.8**: SSO Bypass Justification
+- **Q2.11**: API Key Management Risk
+- **Q2.13**: SSO Compatibility Testing
+- **Q2.14**: SSO Roadmap
+- **Q2.15**: API Logging Enhancement
+- **Q2.17**: Access Control Granularity
+- **Q2.18**: Permission Documentation
+- **Q2.22**: Privileged Access Risk Mitigation
+- **Q2.26**: Automation Verification
+- **Q2.29**: Provisioning Testing Plan
+- **Q2.30**: Deprovisioning Process Reliability
+- **Q2.31**: Session Management
+- **Q2.33**: Session Security Assessment
 
-
-###  Section 5: Logging, Monitoring & Incident Response
-**25 questions** (5 primary, 11 follow-up, 9 conditional)
-
-** Primary Questions:**
-- Q5.1: Logging Capabilities
-- Q5.12: Security Alerting
-- Q5.17: Incident Response Support
-
-** Follow-up Questions:** 11 questions
-
-** Conditional Questions:** 9 questions
-
-
-###  Section 6: Vendor Management & Governance
-**25 questions** (10 primary, 13 follow-up, 2 conditional)
-
-** Primary Questions:**
-- Q6.1: Vendor Security Assessment History
-- Q6.4: Vendor Relationship Management
-- Q6.8: Security Metrics and KPIs
-
-** Follow-up Questions:** 13 questions
-
-** Conditional Questions:** 2 questions
+</details>
 
 
-### ⚖️ Section 7: Risk Summary & Decision
-**4 questions** (2 primary, 1 follow-up, 0 conditional)
+### Section 3: Network Security & Architecture
+**28 questions** | ✅ Core: 9 | ✅ Lite: 2 | ⚠️ Partial: 8 | **Required: 17**
 
-** Primary Questions:**
-- Q7.1: Overall Information Security Risk Assessment
-- Q7.2: Critical Security Gaps
+**Primary Questions:**
+- ✅ Q3.1: Deployment Model
+- ✅ Core Q3.20: Data Transmission to External Parties
+- **Required** Q3.26: Network Traffic Monitoring
 
-** Follow-up Questions:** 1 questions
+**Required Questions (Not in SIG):** 17 questions must be collected separately
+<details>
+<summary>View required questions</summary>
+
+- **Q3.5**: Open Internet Access Risk
+- **Q3.6**: Network Access Implementation
+- **Q3.9**: Internal Network Security Concern
+- **Q3.10**: Architecture Planning Timeline
+- **Q3.11**: Network Security Planning
+- **Q3.12**: Port and Protocol Requirements
+- **Q3.13**: Internal Resource Access Mapping
+- **Q3.16**: Broad Network Access Justification
+- **Q3.17**: Least Privilege Network Access
+- **Q3.18**: HTTP Mitigation Options
+- **Q3.19**: Remote Access Hardening
+- **Q3.22**: Data Flow Documentation
+- **Q3.24**: Data Minimization Verification
+- **Q3.25**: Data Minimization Configuration
+- **Q3.26**: Network Traffic Monitoring
+- **Q3.27**: Encrypted Traffic Visibility Concern
+- **Q3.28**: Network Monitoring Planning
+
+</details>
+
+
+### Section 4: Application Security
+**30 questions** | ✅ Core: 14 | ✅ Lite: 0 | ⚠️ Partial: 15 | **Required: 13**
+
+**Primary Questions:**
+- ✅ Core Q4.1: Security Testing
+- ✅ Core Q4.11: Vulnerability Management
+- ✅ Core Q4.15: Security Vulnerability Notifications
+- ✅ Core Q4.18: Secure Development Lifecycle (SDLC)
+- ✅ Core Q4.21: Third-Party Dependencies
+
+**Required Questions (Not in SIG):** 13 questions must be collected separately
+<details>
+<summary>View required questions</summary>
+
+- **Q4.4**: Testing Adequacy Assessment
+- **Q4.5**: Independent Security Testing Scope
+- **Q4.7**: Report Review Process
+- **Q4.8**: No Independent Testing Justification
+- **Q4.9**: Security Testing Timeline
+- **Q4.10**: Testing Prohibition Concern
+- **Q4.13**: Patching SLA Verification
+- **Q4.14**: Patching SLA Monitoring
+- **Q4.17**: Notification Subscription Setup
+- **Q4.21**: Third-Party Dependencies
+- **Q4.23**: Dependency Update Process
+- **Q4.28**: API Security Adequacy
+- **Q4.30**: Input Validation Security Testing
+
+</details>
+
+
+### Section 5: Logging, Monitoring & Incident Response
+**25 questions** | ✅ Core: 16 | ✅ Lite: 1 | ⚠️ Partial: 6 | **Required: 10**
+
+**Primary Questions:**
+- ✅ Q5.1: Logging Capabilities
+- ✅ Core Q5.12: Security Alerting
+- ✅ Core Q5.17: Incident Response Support
+- ✅ Core Q5.21: Audit Log Integrity
+- ✅ Core Q5.24: User Activity Monitoring
+
+**Required Questions (Not in SIG):** 10 questions must be collected separately
+<details>
+<summary>View required questions</summary>
+
+- **Q5.3**: Logging Adequacy Assessment
+- **Q5.7**: Log Retention Gap Mitigation
+- **Q5.9**: SIEM Integration Planning
+- **Q5.10**: SIEM Integration Timeline
+- **Q5.11**: Alternative Security Monitoring
+- **Q5.14**: Alert Configuration Planning
+- **Q5.15**: Alternative Alerting Strategy
+- **Q5.16**: No Alerts Justification
+- **Q5.21**: Audit Log Integrity
+- **Q5.23**: Log Integrity Gap Mitigation
+
+</details>
+
+
+### Section 6: Vendor Management & Governance
+**25 questions** | ✅ Core: 4 | ✅ Lite: 0 | ⚠️ Partial: 3 | **Required: 22**
+
+**Primary Questions:**
+- **Required** Q6.1: Vendor Security Assessment History
+- **Required** Q6.4: Vendor Relationship Management
+- **Required** Q6.8: Security Metrics and KPIs
+- **Required** Q6.10: Security Escalation Path
+- ✅ Core Q6.12: Vendor Change Notification
+
+**Required Questions (Not in SIG):** 22 questions must be collected separately
+<details>
+<summary>View required questions</summary>
+
+- **Q6.1**: Vendor Security Assessment History
+- **Q6.2**: Historical Security Performance
+- **Q6.3**: Historical Security Incident Evaluation
+- **Q6.4**: Vendor Relationship Management
+- **Q6.5**: Ownership Assignment Timeline
+- **Q6.6**: Security Review Cadence
+- **Q6.7**: Security Review Cadence Planning
+- **Q6.8**: Security Metrics and KPIs
+- **Q6.9**: Security Metrics Planning
+- **Q6.10**: Security Escalation Path
+- **Q6.11**: Security Escalation Planning
+- **Q6.12**: Vendor Change Notification
+- **Q6.14**: Vendor Security Roadmap
+- **Q6.15**: Security Roadmap Importance
+- **Q6.18**: Documentation Adequacy
+- **Q6.19**: Vendor Responsiveness
+- **Q6.20**: Vendor Responsiveness Concern
+- **Q6.21**: Vendor Security Transparency
+- **Q6.22**: Vendor Transparency Concern
+- **Q6.23**: Reference Customers - Security Perspective
+- **Q6.24**: Reference Refusal Security Concern
+- **Q6.25**: Reference Value for Security
+
+</details>
+
+
+### Section 7: Risk Summary & Decision
+**4 questions** | ✅ Core: 1 | ✅ Lite: 0 | ⚠️ Partial: 1 | **Required: 3**
+
+**Primary Questions:**
+- **Required** Q7.1: Overall Information Security Risk Assessment
+- ✅ Core Q7.2: Critical Security Gaps
+
+**Required Questions (Not in SIG):** 3 questions must be collected separately
+<details>
+<summary>View required questions</summary>
+
+- **Q7.1**: Overall Information Security Risk Assessment
+- **Q7.3**: Required Security Mitigations
+- **Q7.4**: Security Approval Status
+
+</details>
 
 ---
 
-##  Quick Navigation
+## Quick Navigation
 
 **Jump to Section:**
-- [ Section 1: Data Handling](#1-data-handling--classification)
-- [ Section 2: Identity & Access](#part-2-identity--access-management-iam)
-- [ Section 3: Network Security](#3-network-security--architecture)
-- [ Section 4: Application Security](#4-application-security)
-- [ Section 5: Logging & Monitoring](#5-logging-monitoring--incident-response)
-- [ Section 6: Vendor Management](#6-vendor-management--governance)
-- [⚖️ Section 7: Risk Decision](#7-risk-summary--decision)
+- [Section 1: Data Handling](#1-data-handling--classification)
+- [Section 2: Identity & Access](#part-2-identity--access-management-iam)
+- [Section 3: Network Security](#3-network-security--architecture)
+- [Section 4: Application Security](#4-application-security)
+- [Section 5: Logging & Monitoring](#5-logging-monitoring--incident-response)
+- [Section 6: Vendor Management](#6-vendor-management--governance)
+- [Section 7: Risk Decision](#7-risk-summary--decision)
 
-**Question Types:**
--  **Primary** (23) - Entry points
--  **Follow-up** (~85) - Context-based
--  **Conditional** (~62) - Triggered questions
+**Coverage Key:**
+- ✅ **SIG Core** = Fully covered in SIG Core questionnaire
+- ✅ **SIG Lite** = Fully covered in SIG Lite questionnaire  
+- ⚠️ **Partial** = Limited/partial coverage in SIG
+- **Required** = Not in SIG - must collect separately
+
+**SIG Core Summary:**
+- 68 questions fully covered
+- 62 questions partially covered (⚠️)
+- 15 questions not covered (require supplemental collection)
 
 ---
 
