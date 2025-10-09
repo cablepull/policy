@@ -2808,7 +2808,7 @@ Question: What security testing will you perform? (Select all that apply)
 > ### Response Options (Allow multiple responses):
 > 
 > A. External penetration test<br>
-> B. Web application security assessment (OWASP Top 10) / OWASP ASVS <br>
+> B. Web application security assessment (OWASP Top 10/ OWASP ASVS) <br>
 > C. API security testing<br>
 > D. Authentication/authorization testing<br>
 > E. Infrastructure security review<br>
